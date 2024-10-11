@@ -99,7 +99,7 @@
 }
 .box-footer{
     background: linear-gradient(180deg, #030D01 0%, rgba(3, 13, 1, 0) 100%);
-    padding-bottom: 50px;
+
 }
 .home {
     font-family: "Fira Sans", sans-serif;
@@ -130,7 +130,7 @@
     text-align: left;
     background: rgba(255, 194, 10, 1);
     color: rgba(255, 255, 255, 1);
-    padding:5px  15px;
+    padding:15px;
 }
 
 .box {
@@ -167,8 +167,8 @@
     line-height: 76.8px;
     text-align: left;
     color: rgba(59, 148, 94, 1);
-    /* text-shadow: 2px 2px 8px rgba(255, 255, 255, 1); */
-    text-shadow: none;
+    text-shadow: 2px 2px 8px rgb(40, 160, 122); 
+
 }
 
 .green {
