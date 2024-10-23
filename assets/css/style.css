@@ -81,9 +81,11 @@
 .gap-50 {
     gap: 50px;
 }
-.gap-9{
+
+.gap-9 {
     gap: 9px;
 }
+
 /*section-1*/
 .bg-pic {
     background-image: url(../image/Group\ 43172.png);
@@ -92,15 +94,23 @@
     background-color: black;
 
 }
-.head-1{
+
+.head-1 {
     background: linear-gradient(180deg, #000000 36.19%, rgba(0, 0, 0, 0) 100%);
     width: 100%;
     padding: 30px;
 }
-.box-footer{
+
+.box-footer {
+padding-bottom: 50px;
     background: linear-gradient(180deg, #030D01 0%, rgba(3, 13, 1, 0) 100%);
+    width: 100%;
+
+filter:blur(113px);
+
 
 }
+
 .home {
     font-family: "Fira Sans", sans-serif;
     font-size: 16px;
@@ -108,7 +118,7 @@
     line-height: 24px;
     text-align: left;
     color: rgba(255, 255, 255, 1);
-   }
+}
 
 .link {
     font-family: "Fira Sans", sans-serif;
@@ -130,7 +140,7 @@
     text-align: left;
     background: rgba(255, 194, 10, 1);
     color: rgba(255, 255, 255, 1);
-    padding:15px;
+    padding: 15px;
 }
 
 .box {
@@ -142,7 +152,7 @@
     height: 32px;
     border-radius: 46px;
     border: 1px solid #fff;
-    display: flex; 
+    display: flex;
     background-color: black;
     align-items: center;
     justify-content: center;
@@ -167,7 +177,7 @@
     line-height: 76.8px;
     text-align: left;
     color: rgba(59, 148, 94, 1);
-    text-shadow: 2px 2px 8px rgb(40, 160, 122); 
+    text-shadow: 2px 2px 8px rgb(40, 160, 122);
 
 }
 
