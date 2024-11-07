@@ -102,11 +102,11 @@
 }
 
 .box-footer {
-padding-bottom: 50px;
+    padding-bottom: 50px;
     background: linear-gradient(180deg, #030D01 0%, rgba(3, 13, 1, 0) 100%);
     width: 100%;
 
-filter:blur(113px);
+    filter: blur(113px);
 
 
 }
@@ -213,6 +213,7 @@ filter:blur(113px);
     font-family: "DM Sans", sans-serif;
     font-size: 24px;
     font-weight: 700;
+    white-space: nowrap;
     line-height: 31.25px;
     letter-spacing: -0.2926828861236572px;
     text-align: left;
@@ -225,6 +226,9 @@ filter:blur(113px);
     font-family: "DM Sans", sans-serif;
     color: rgba(21, 20, 57, 0.4);
 
+}
+.gap-430 {
+    gap: 480px;
 }
 
 .btn-secondary {
@@ -249,6 +253,7 @@ a {
     text-align: left;
     color: rgba(21, 20, 57, 0.4);
     padding-top: 40px;
+    gap: 20px;
 
 
 
@@ -260,8 +265,8 @@ a {
     line-height: 26px;
     text-align: left;
     color: rgba(21, 20, 57, 0.4);
-    margin-left: 120px;
-    padding-top: 40px;
+     padding-top: 40px;
+    gap: 30px;
 
 }
 
@@ -278,7 +283,7 @@ a {
     background: rgba(37, 218, 197, 1);
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 20px;
+
 
 
 }
@@ -372,6 +377,12 @@ iframe {
     margin-top: 20px;
 }
 
+.btn-secondary {
+    --bs-btn-active-bg: none !important;
+    --bs-btn-font-family: "DM Sans", sans-serif;
+    color: rgba(21, 20, 57, 0.4) !important;
+}
+
 
 
 
@@ -431,12 +442,13 @@ iframe {
 
 }
 
-@media(min-width:576px) {
+@media(max-width:576px) {
     .col-sm-5 {
         width: 41.66%;
         padding-left: 12px;
         padding-right: 12px;
     }
+    
 
     .col-sm-6 {
         width: 50%;
@@ -479,12 +491,12 @@ iframe {
     label[for="list-1"]>span {
         width: 100%;
         height: 3px;
-        background-color: white;
+        background-color: black;
         z-index: 2;
     }
 
     input#list-1:checked~.ul-color {
-        background-color: black;
+        background-color: beige;
         right: 0;
     }
 
@@ -503,7 +515,9 @@ iframe {
         transform: rotate(-63deg);
         transform-origin: left;
     }
-
+.ul-color, .nav-link-1, .nav-link-2{
+    flex-direction: column;
+}
 
     .ul-color {
 
@@ -511,11 +525,18 @@ iframe {
         justify-content: center;
         width: 100%;
         height: 100%;
-        background: black;
+        background: blue;
         position: fixed;
         top: 0;
         right: -100%;
         z-index: 2;
         transition: all 200ms linear;
     }
+        @media(max-width:576px) {
+        .ul-color {
+           flex-direction: column;
+           justify-content: center; 
+        }
+    }
+    
 }
